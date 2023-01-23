@@ -34,26 +34,23 @@ import imgLimpezaProfissional25 from '../../assets/LimpezaProfissional251.svg'
 import { GarmetCare } from "../../components/GarmetCare";
 import { FooterPages } from "../../components/FooterPages";
 
-import imgLogo from '../../assets/LogotAltoGiro.svg'
+import imgLogo from '../../assets/LogotCiaBroto.svg'
 
-export function Fitness(){
+export function Kids(){
     return (
         <>
-        <Header variant="primary"/>
+        <Header variant="tertiary"/>
             <Container>
                 <li>Lavar separadamente</li>
-                <li>Não deixar de molho</li>
-                <li>Retirar todo excesso de água</li>
                 <li>Armazenar longe do alcance da luz</li>
-                <li>Evitar contato com umidade</li>
                 <li>Evite misturar com peças claras</li>
-                <li>lavar imediatamente após o uso com água abundante</li>
+                <li>Lavar imediatamente após o uso com água abundante</li>
                 <li>Evitar expor em superfícies pontiagudas ou ásperas</li>
 
                 <span> ENTENDA A SUA ETIQUETA </span>
 
                 
-                <TagButton variant="primary" title="LAVAGEM"/>
+                <TagButton variant="tertiary" title="LAVAGEM"/>
                     <GarmetCare icon={imgLavagemNormal} title="Modo de lavagem normal em máquina doméstica" />
                     <GarmetCare icon={imgLavagemSuave} title="Modo de lavagem suave em máquina doméstica" />
                     <GarmetCare icon={imgLavagemMuitoSuave} title="Modo de lavagem muito suave em máquina doméstica" />
@@ -61,18 +58,18 @@ export function Fitness(){
                     <GarmetCare icon={imgLavarComMaos} title="Lavar exclusivamente à mão, temperatura máxima de lavagem 40°C " />
                     <GarmetCare icon={imgNaoLavarComAgua} title="Não lavar com água" />
                
-                <TagButton variant="primary" title="ALVEJAMENTO"/>
+                <TagButton variant="tertiary" title="ALVEJAMENTO"/>
                     <GarmetCare icon={imgPermiteQualquerTipoAlvejante} title="Permite o uso de qualquer tipo de alvejante, mesmo os clorados" />
                     <GarmetCare icon={imgNaoPermiteUsoNenhumAlvejante} title="Não permite o uso de alvejante clorado" />
                     <GarmetCare icon={imgNaoPermiteUsoAlvejante} title="Não permite o uso de nenhum tipo de alvejante" />
 
-                <TagButton variant="primary" title="PASSADORIA"/>
+                <TagButton variant="tertiary" title="PASSADORIA"/>
                     <GarmetCare icon={imgLavagem200} title="Passar em temperatura máxima de 200°C" />
                     <GarmetCare icon={imgLavagem150} title="Passar em temperatura máxima de 150°C" />
                     <GarmetCare icon={imgLavagem110} title="Passar em temperatura máxima de 110°C" />
                     <GarmetCare icon={imgLavagemNferro} title="Não passar ferro" />
 
-                <TagButton variant="primary" title="SECAGEM"/>
+                <TagButton variant="tertiary" title="SECAGEM"/>
                     <GarmetCare icon={imgSecarMaquinaEmTemperaturaNormal} title="Secar à máquina em temperatura normal" />
                     <GarmetCare icon={imgSecarMaquinaEmTemperaturaBaixa} title="Secar à máquina em temperatura baixa" />
                     <GarmetCare icon={imgNSecarEmMaquina} title="Não secar à máquina" />
@@ -81,7 +78,7 @@ export function Fitness(){
                     <GarmetCare icon={imgSecarEstendidoHorizontal} title="Secar estendido horizontalmente" />
                     <GarmetCare icon={imgSecarSombra} title="Secar à sombra" />
 
-                <TagButton variant="primary" title="LIMPEZA PROFISSIONAL"/>
+                <TagButton variant="tertiary" title="LIMPEZA PROFISSIONAL"/>
                     <GarmetCare icon={imgLimpezaProfissional25}  title="As letras dentro do circulo indicam o tipo de limpeza profissional (seca ou úmida) e de solvente adequado a cada peça" />
                     <GarmetCare icon={imgLimpezaProfissional24} title="As letras abaixo do círculo (ou a falta dela), indica o processo de limpeza profissional: normal, suave ou muito suave"/>
                     <GarmetCare icon={imgLimpezaProfissional23} title="As letras abaixo do círculo (ou a falta dela), indica o processo de limpeza profissional: normal, suave ou muito suave" />
@@ -89,7 +86,7 @@ export function Fitness(){
             </Container>
 
             <FooterPages 
-                variant="primary"
+                variant="tertiary"
                 icon={imgLogo}
             />
         </>

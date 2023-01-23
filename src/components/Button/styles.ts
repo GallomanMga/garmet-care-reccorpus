@@ -1,6 +1,6 @@
 import styled, {css} from 'styled-components'
 
-export type ButtonVariant = 'primary' | 'secondary'
+export type ButtonVariant = 'primary' | 'secondary' | 'tertiary'
 
 interface ButtonContainerProps {
     variant: ButtonVariant
@@ -9,7 +9,9 @@ interface ButtonContainerProps {
 
 const buttonVariants = {
     primary: '#FF5935',
-    secondary: '#00D6B0'
+    secondary: '#00D6B0',
+    tertiary: '#534EE1',
+    
 }
 
 
@@ -49,7 +51,7 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
   &:hover { opacity: 0.7};
 
   padding:10px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 
   img{
     width:45px;

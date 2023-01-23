@@ -11,22 +11,26 @@ export function Home(){
 
     return (
         <>
-            <Header />
+            <Header variant="main"/>
             
             <Container>
                 <Button 
                     to="/Fitness"
-                    //onClick={handleClick}
-                    icon={imgLogo2}
+                    //icon={imgLogo2}
                     title="FITNESS"
                     variant="primary"
                 />
                 <Button 
                     to="/Beach"
-                    //onClick={handleClick}
-                    icon={imgLogo1}
+                    //icon={imgLogo1}
                     title="BEACH"
                     variant="secondary"
+                />
+                <Button 
+                    to="/Kids"
+                    //icon={imgLogo1}
+                    title="KIDS"
+                    variant="tertiary"
                 />
             </Container>
 

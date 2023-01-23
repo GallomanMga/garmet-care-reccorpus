@@ -9,7 +9,8 @@ interface HeaderContainerProps {
 const headerVariants = {
     main: '#C9C9C9',
     primary: '#FF5935',
-    secondary: '#00D6B0'
+    secondary: '#00D6B0',
+    tertiary: '#534EE1'
 }
 
 export const Container = styled.header<HeaderContainerProps>`

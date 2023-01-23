@@ -9,7 +9,8 @@ interface TagContainerProps {
 const tagVariants = {
     main: '#FBFEFD',
     primary: '#FF5935',
-    secondary: '#00D6B0'
+    secondary: '#00D6B0',
+    tertiary: '#534EE1'
 }
 
 export const TagContainer = styled.button<TagContainerProps>`

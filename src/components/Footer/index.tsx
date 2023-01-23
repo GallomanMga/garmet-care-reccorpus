@@ -6,7 +6,7 @@ export function Footer() {
     return(
         <Container>
            <img src={imgLogo1} alt="" />
-           Selecione seu Modelo
+           Selecione seu Estilo
         </Container>
         
     )

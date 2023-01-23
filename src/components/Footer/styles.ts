@@ -2,21 +2,18 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     display: flex;
+    flex-direction: column;
+    margin-top: 50px;
 
-    margin-top: 20px;
-
-    
     align-items: center;
-    justify-content: center;
-
-    
+    justify-content: center;    
 
     color: ${props => props.theme.mainText};
     font-size: 1.5rem;
-    gap:2rem;
+    //gap:1rem;
 
     img {
         width: 60px;
-        height: 65px;
+        height: 60px;
     }
 `

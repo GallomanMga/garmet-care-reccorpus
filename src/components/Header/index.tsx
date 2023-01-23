@@ -3,7 +3,7 @@ import { Container, HeaderVariant } from "./styles";
 import imgLogo1 from '../../assets/CuidadosComPeca.svg'
 
 interface HeaderProps {
-    variant?: HeaderVariant
+    variant: HeaderVariant
 }
 
 export function Header({variant = 'main'}: HeaderProps) {

@@ -33,7 +33,8 @@ import imgLimpezaProfissional23 from '../../assets/LimpezaProfissional23.svg'
 import imgLimpezaProfissional24 from '../../assets/LimpezaProfissional24.svg'
 import imgLimpezaProfissional25 from '../../assets/LimpezaProfissional251.svg'
 
-
+import imgLogo from '../../assets/LogoNewBeach.svg'
+import { FooterPages } from "../../components/FooterPages";
 
 
 export function Beach(){
@@ -86,6 +87,11 @@ export function Beach(){
             
              
             </Container>
+
+            <FooterPages 
+                variant="secondary"
+                icon={imgLogo}
+            />
         </>
     )
 }
