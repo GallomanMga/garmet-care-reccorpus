@@ -1,6 +1,6 @@
 import { Header } from "../../components/Header";
 import { TagButton } from "../../components/TagButton";
-import { Container } from "./styles";
+import { Container, Span, Topics } from "./styles";
 
 
 import imgLavagem150 from  '../../assets/150C.svg'
@@ -35,22 +35,61 @@ import { GarmetCare } from "../../components/GarmetCare";
 import { FooterPages } from "../../components/FooterPages";
 
 import imgLogo from '../../assets/LogotAltoGiro.svg'
+import ScrollToTop from "react-scroll-to-top";
 
 export function Fitness(){
     return (
         <>
-        <Header variant="primary"/>
+        <Header variant="primary" to="/"/>
             <Container>
-                <li>Lavar separadamente</li>
-                <li>Não deixar de molho</li>
-                <li>Retirar todo excesso de água</li>
-                <li>Armazenar longe do alcance da luz</li>
-                <li>Evitar contato com umidade</li>
-                <li>Evite misturar com peças claras</li>
-                <li>lavar imediatamente após o uso com água abundante</li>
-                <li>Evitar expor em superfícies pontiagudas ou ásperas</li>
+                <Topics
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                >Lavar separadamente</Topics>
+                <Topics
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                >Não deixar de molho</Topics>
+                <Topics
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                >Retirar todo excesso de água</Topics>
+                <Topics
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                >Armazenar longe do alcance da luz</Topics>
+                <Topics
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                >Evitar contato com umidade</Topics>
+                <Topics
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                >Evite misturar com peças claras</Topics>
+                <Topics
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                >lavar imediatamente após o uso com água abundante</Topics>
+                <Topics
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                >Evitar expor em superfícies pontiagudas ou ásperas</Topics>
 
-                <span> ENTENDA A SUA ETIQUETA </span>
+                <Span
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                >
+                     ENTENDA A SUA ETIQUETA 
+                </Span>
 
                 
                 <TagButton variant="primary" title="LAVAGEM"/>
@@ -92,6 +131,13 @@ export function Fitness(){
                 variant="primary"
                 icon={imgLogo}
             />
+
+            <ScrollToTop 
+                smooth 
+                top={300} 
+                color="#FF5935"
+                style = {{ opacity: 0.5 }}
+            /> 
         </>
     )
 }

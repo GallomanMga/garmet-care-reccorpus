@@ -3,15 +3,14 @@ import { Button } from '../../components/Button'
 import { Footer } from '../../components/Footer'
 
 import { Container } from './styles'
+import { ClickAnimation } from '../../components/LottieAnimation/ClickAnimation'
 
-import imgLogo1 from '../../assets/beachBt.svg'
-import imgLogo2 from '../../assets/fitnessBt.svg'
 
 export function Home(){
 
     return (
         <>
-            <Header variant="main"/>
+            <Header variant="main" to="/"/>
             
             <Container>
                 <Button 
@@ -32,9 +31,15 @@ export function Home(){
                     title="KIDS"
                     variant="tertiary"
                 />
+                <ClickAnimation />
+                <Footer /> 
             </Container>
+            
+            
+            
+            
 
-            <Footer />
+           
             
             
         </>

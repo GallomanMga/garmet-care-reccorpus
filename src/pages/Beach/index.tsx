@@ -1,7 +1,8 @@
 import { GarmetCare } from "../../components/GarmetCare";
 import { Header } from "../../components/Header";
 import { TagButton } from "../../components/TagButton";
-import { Container, Topics } from "./styles";
+import { Container, Span, Topics } from "./styles";
+import {motion } from 'framer-motion'
 
 
 import imgLavagem150 from  '../../assets/150C.svg'
@@ -35,20 +36,45 @@ import imgLimpezaProfissional25 from '../../assets/LimpezaProfissional251.svg'
 
 import imgLogo from '../../assets/LogoNewBeach.svg'
 import { FooterPages } from "../../components/FooterPages";
+import ScrollToTop from "react-scroll-to-top";
 
 
 export function Beach(){
     return (
          <>
-        <Header variant="secondary"/>
+        <Header variant="secondary" to="/" />
             <Container>
-                <Topics>Lavar separadamente</Topics>
-                <Topics>Armazenar longe do alcance da luz</Topics>
-                <Topics>Evite misturar com peças claras</Topics>
-                <Topics>lavar imediatamente após o uso com água abundante</Topics>
-                <Topics>Evitar expor em superfícies pontiagudas ou ásperas</Topics>
+                <Topics
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                >Lavar separadamente</Topics>
+                <Topics
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                >Armazenar longe do alcance da luz</Topics>
+                <Topics
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                >Evite misturar com peças claras</Topics>
+                <Topics
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                >lavar imediatamente após o uso com água abundante</Topics>
+                <Topics
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                >Evitar expor em superfícies pontiagudas ou ásperas</Topics>
 
-                <span> ENTENDA A SUA ETIQUETA </span>
+                <Span
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                > ENTENDA A SUA ETIQUETA </Span>
             
             
                 <TagButton variant="secondary" title="LAVAGEM"/>
@@ -92,6 +118,13 @@ export function Beach(){
                 variant="secondary"
                 icon={imgLogo}
             />
+
+            <ScrollToTop 
+                smooth 
+                top={300} 
+                color="#00D6B0"
+                style = {{ opacity: 0.5 }}
+            /> 
         </>
     )
 }

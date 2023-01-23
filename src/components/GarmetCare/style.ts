@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const Icon = styled.img`
@@ -22,7 +23,7 @@ export const Container = styled.div`
 `
 
 
-export const Content = styled.li`
+export const Content = styled(motion.li)`
     align-items: center;
     font-size: 1rem;
     margin-left: 10px;

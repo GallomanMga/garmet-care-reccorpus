@@ -1,19 +1,19 @@
+import { motion } from 'framer-motion'
 import styled, {css} from 'styled-components'
 
-export type TagVariant =  'primary' | 'secondary'
+export type TagVariant =  'primary' | 'secondary' | 'tertiary'
 
 interface TagContainerProps {
     variant: TagVariant
 }
 
 const tagVariants = {
-    main: '#FBFEFD',
     primary: '#FF5935',
     secondary: '#00D6B0',
     tertiary: '#534EE1'
 }
 
-export const TagContainer = styled.button<TagContainerProps>`
+export const TagContainer = styled(motion.button)<TagContainerProps>`
     width: 160px;
     height: 45px;
     

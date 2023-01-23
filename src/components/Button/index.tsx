@@ -20,7 +20,11 @@ export function Button({
     const navigate = useNavigate()
 
     return(
-        <ButtonWrapper>
+        <ButtonWrapper
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+        >
                 <ButtonContainer
                     variant={variant}
                     onClick={() => {

@@ -1,6 +1,6 @@
 import styled, {css} from 'styled-components'
 
-export type HeaderVariant = 'main' | 'primary' | 'secondary'
+export type HeaderVariant = 'main' | 'primary' | 'secondary' | 'tertiary'
 
 interface HeaderContainerProps {
     variant: HeaderVariant
@@ -31,5 +31,6 @@ export const Container = styled.header<HeaderContainerProps>`
     img {
         width: 500px;
         height: 150px;
+        cursor: pointer;
     }
 `

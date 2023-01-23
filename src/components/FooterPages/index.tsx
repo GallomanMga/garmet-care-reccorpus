@@ -1,4 +1,6 @@
 import { Container, FooterPagesVariant } from "./styles";
+import ScrollToTop from "react-scroll-to-top"
+
 
 interface FooterProps {
     variant: FooterPagesVariant;
@@ -7,11 +9,15 @@ interface FooterProps {
 
 export function FooterPages({ icon,  variant = 'primary', }: FooterProps) {
     return(
-        <Container 
-            variant={variant}
-        >
-           {icon && <img src={icon} alt="" />}
-        </Container>
+        <>
+            <Container 
+                variant={variant}
+            >
+            {icon && <img src={icon} alt="" />}
+            </Container>
+
+           
+        </>
         
     )
 }

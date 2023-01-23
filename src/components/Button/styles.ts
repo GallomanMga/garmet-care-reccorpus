@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled, {css} from 'styled-components'
 
 export type ButtonVariant = 'primary' | 'secondary' | 'tertiary'
@@ -15,7 +16,7 @@ const buttonVariants = {
 }
 
 
-export const ButtonWrapper = styled.div`
+export const ButtonWrapper = styled(motion.div)`
     display: flex;
     flex-direction: column;
 
@@ -28,7 +29,7 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
   width: 300px;
   height: 60px;
 
-  border-radius: 20px;
+  border-radius: 10px;
   border: 0;
 
   ${props => {
@@ -51,7 +52,7 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
   &:hover { opacity: 0.7};
 
   padding:10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   img{
     width:45px;
