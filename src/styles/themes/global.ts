@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: 0;
+      
     }
 
     :focus {
@@ -12,7 +13,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: ${props => props.theme.mainbackground};
+       
+        background-color: #C9C9C9;
         -webkit-font-smoothing: antialgit iased;
     }
 

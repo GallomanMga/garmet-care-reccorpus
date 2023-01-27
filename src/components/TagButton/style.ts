@@ -21,8 +21,8 @@ export const TagContainer = styled(motion.button)<TagContainerProps>`
     border-radius: 10px;
     border: 0;
 
-    align-items: center;
-    justify-content: center;
+   // align-items: center;
+    //justify-content: center;
 
     font-size: 1rem;
     font-weight: bold;

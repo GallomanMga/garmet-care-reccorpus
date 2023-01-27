@@ -11,7 +11,7 @@ export const Icon = styled.img`
 export const WrapperContainer = styled.div`
     display: flex;
     width: 80%;
-    align-items: right;   
+    //align-items: right;   
 `
 
 export const Container = styled.div`
