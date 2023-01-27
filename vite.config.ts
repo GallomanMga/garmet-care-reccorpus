@@ -9,13 +9,13 @@ export default defineConfig({
     outDir: "./wwwroot/app/",
     sourcemap: true,
     emptyOutDir: true,
-    rollupOptions: {
+/*    rollupOptions: {
       output: {
         entryFileNames: "[name].js",
-        chunkFileNames: "[name].js",
+        chunkFileNames: "[name].",
         assetFileNames: "[name].[ext]"
       }
-    }
+    } */
   },
   server: {
      https: true,

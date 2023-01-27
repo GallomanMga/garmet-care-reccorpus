@@ -8,7 +8,7 @@ import {motion } from 'framer-motion'
 import imgLavagem150 from  '../../assets/150C.svg'
 import imgLavagem110 from  '../../assets/110C.svg'
 import imgLavagem200 from  '../../assets/200C.svg'
-import imgLavagemNferro from  '../../assets/naopassaroferro.svg'
+import imgLavagemNferro from  '../../assets/Naopassaroferro.svg'
 
 
 import imgLPNlavarSeco from  '../../assets/Naolavaroseco.svg'
