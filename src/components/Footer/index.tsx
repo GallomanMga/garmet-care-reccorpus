@@ -5,7 +5,6 @@ import { ClickAnimation } from "../LottieAnimation/ClickAnimation";
 
 
 
-
 export function Footer() {
     return(
         <>

@@ -1,4 +1,4 @@
-import Lottie from 'react-lottie'
+import Lottie from "lottie-react";
 
 import ClickAnimationJson from "../../assets/lottiejson/click.json"
 
@@ -8,16 +8,14 @@ export const  ClickAnimation = () => {
         autoplay: true,
         animationData: ClickAnimationJson,
         renderSettings: {
-            SVGAnimatedPreserveAspectRatio: "xMidYMid slice"
+            SVGAnimatedPreserveAspectRatio: "xMidYMid slice",
+            hideOnTransparent: true
         }
     }
     return (
         
-           <Lottie 
-                options={defaultOptions} 
-                //width={300} 
-                height={200} 
+           <Lottie style={{ height:250}}
+                animationData={ClickAnimationJson}
             />
-   
      )
 }
