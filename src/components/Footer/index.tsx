@@ -2,7 +2,7 @@ import { Container } from "./styles";
 
 import imgLogo1 from '../../assets/Cliquenapeca.svg'
 import { ClickAnimation } from "../LottieAnimation/ClickAnimation";
-import { WrapperContainer } from "../GarmetCare/style";
+
 
 
 
