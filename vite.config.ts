@@ -1,14 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import basicSsl from '@vitejs/plugin-basic-ssl'
+//import basicSsl from '@vitejs/plugin-basic-ssl'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), basicSsl()],
-  build: {
-    outDir: "./wwwroot/app/",
-    sourcemap: true,
-    emptyOutDir: true,
+  plugins: [react()],
+  //build: {
+  //  outDir: "./wwwroot/app/",
+  //  sourcemap: true,
+  //  emptyOutDir: true,
 /*    rollupOptions: {
       output: {
         entryFileNames: "[name].js",
@@ -17,9 +17,9 @@ export default defineConfig({
       }
     } */
   },
-  server: {
-     https: true,
-     host: "localhost"
+  //server: {
+   //  https: true,
+    // host: "localhost"
      /*
     port: 3000,
     https: true,
@@ -28,8 +28,9 @@ export default defineConfig({
        host: "https://localhost",
        protocol: "wss"
     }*/
-  }
- })
+  //}
+ //}
+ )
 
 
 
