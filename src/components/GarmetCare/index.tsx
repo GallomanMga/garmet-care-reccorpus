@@ -1,4 +1,4 @@
-import { Container, Content, Icon, WrapperContainer } from "./style";
+import { Container, Content, Icon } from "./style";
 
 interface GarmetCareProps {
     icon?: string;
@@ -8,7 +8,7 @@ interface GarmetCareProps {
 
 export function GarmetCare({ icon, title}: GarmetCareProps ){
     return(
-        <WrapperContainer>
+      
         <Container>
             
              <Icon src={icon} alt="" />
@@ -22,7 +22,7 @@ export function GarmetCare({ icon, title}: GarmetCareProps ){
                 {title}
              </Content>
         </Container>  
-        </WrapperContainer>
+       
         
        
     )

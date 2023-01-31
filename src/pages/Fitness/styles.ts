@@ -8,7 +8,7 @@ export const Container = styled.section`
     gap: 20px;
     justify-content: center;
     align-items: center;
-    //font-size: 1rem;
+    font-size: 1rem;
     padding: 0 1rem;
 
     background-color: ${props => props.theme.primary};

@@ -21,7 +21,7 @@ export function Header({variant, to, onClick }: HeaderProps) {
                 navigate(to)
             }}  
         >
-           <img src={imgLogo1} alt="" />
+           <img src={imgLogo1} alt="Home" />
         </Container>
         
     )
