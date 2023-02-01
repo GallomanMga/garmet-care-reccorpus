@@ -31,7 +31,7 @@ export function Home(){
                     title="KIDS"
                     variant="tertiary"
                 />
-                <ClickAnimation />
+               
                 <Footer /> 
             </Container>
             

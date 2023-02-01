@@ -5,11 +5,12 @@ export const Container = styled.section`
     display: flex;
     
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    padding: 0 1rem;
+   
+    
 
     background-color: ${props => props.theme.primary};
     color: ${props => props.theme.mainText} ;
@@ -23,5 +24,6 @@ export const Span = styled(motion.span)`
 
 export const Topics = styled(motion.li)`
     font-size: 1rem;
-   
+    align-items: center;
+    justify-content: center;
 `

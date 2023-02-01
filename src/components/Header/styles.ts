@@ -15,8 +15,7 @@ const headerVariants = {
 
 export const Container = styled.header<HeaderContainerProps>`
     display: flex;
-    width: 100%;
-    height:20rem;
+    padding: 1.9rem;
 
     align-items: center;
     justify-content: center;
@@ -26,10 +25,10 @@ export const Container = styled.header<HeaderContainerProps>`
     `background-color: ${headerVariants[props.variant]}
     `
   } };
-    //background-color: ${props => props.theme.mainbackground};
+   
 
     img {
-        width: 500px;
+        width: 200px;
         height: 150px;
         cursor: pointer;
     }

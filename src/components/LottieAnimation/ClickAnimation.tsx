@@ -14,7 +14,7 @@ export const  ClickAnimation = () => {
     }
     return (
         
-           <Lottie style={{ height:250}}
+           <Lottie style={{ height:190}}
                 animationData={ClickAnimationJson}
             />
      )
