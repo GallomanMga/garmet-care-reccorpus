@@ -13,9 +13,13 @@ export const Icon = styled.img`
 export const Container = styled.div`
    display: grid;
    grid-template-columns: auto 2fr;
-   width: 50vh;
+   width: 40vw;
    align-items: center;
   justify-content: center;
+
+  @media (max-width:600px){
+    width: 90vw;
+  }
   
 `
 

@@ -9,7 +9,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    
+    padding: 2rem;
    
     background-color: ${props => props.theme.tertiary};
     color: ${props => props.theme.mainText} ;
@@ -23,4 +23,15 @@ export const Span = styled(motion.span)`
 
 export const Topics = styled(motion.li)`
     font-size: 1rem;
+`
+
+export const TopicsWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 82vw;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+ 
 `

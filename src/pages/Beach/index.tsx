@@ -1,7 +1,7 @@
 import { GarmetCare } from "../../components/GarmetCare";
 import { Header } from "../../components/Header";
 import { TagButton } from "../../components/TagButton";
-import { Container, Span, Topics } from "./styles";
+import { Container, Span, Topics, TopicsWrapper } from "./styles";
 import {motion } from 'framer-motion'
 
 
@@ -44,31 +44,34 @@ export function Beach(){
          <>
         <Header variant="secondary" to="/" />
             <Container>
-                <Topics
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
-                >Lavar separadamente</Topics>
-                <Topics
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
-                >Armazenar longe do alcance da luz</Topics>
-                <Topics
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
-                >Evite misturar com peças claras</Topics>
-                <Topics
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
-                >lavar imediatamente após o uso com água abundante</Topics>
-                <Topics
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
-                >Evitar expor em superfícies pontiagudas ou ásperas</Topics>
+                <TopicsWrapper>
+                    <Topics
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                    >Lavar separadamente</Topics>
+                    <Topics
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                    >Armazenar longe do alcance da luz</Topics>
+                    <Topics
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                    >Evite misturar com peças claras</Topics>
+                    <Topics
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                    >lavar imediatamente após o uso com água abundante</Topics>
+                    <Topics
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+                    >Evitar expor em superfícies pontiagudas ou ásperas
+                    </Topics>
+                </TopicsWrapper>
 
                 <Span
                     initial={{opacity: 0}}

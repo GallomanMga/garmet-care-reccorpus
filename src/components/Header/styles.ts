@@ -15,7 +15,7 @@ const headerVariants = {
 
 export const Container = styled.header<HeaderContainerProps>`
     display: flex;
-    padding: 1.9rem;
+    
 
     align-items: center;
     justify-content: center;
@@ -32,4 +32,8 @@ export const Container = styled.header<HeaderContainerProps>`
         height: 150px;
         cursor: pointer;
     }
+
+    
+
+    
 `

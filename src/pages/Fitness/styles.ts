@@ -3,15 +3,12 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
     display: flex;
-    
     flex-direction: column;
-    gap: 12px;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-   
-    
-
+    padding: 2rem;
     background-color: ${props => props.theme.primary};
     color: ${props => props.theme.mainText} ;
      
@@ -26,4 +23,15 @@ export const Topics = styled(motion.li)`
     font-size: 1rem;
     align-items: center;
     justify-content: center;
+
+`
+
+export const TopicsWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 82vw;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+ 
 `
