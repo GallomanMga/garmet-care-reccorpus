@@ -1,12 +1,20 @@
 export const defaultTheme = {
+     
+    primary: '#C81417',
+    secondary: '#FFFFFF',
+    tertiary: '#eaeaea',
 
-    primary: '#FF5935',
-    secondary: '#00D6B0',
-    tertiary: '#534EE1',
+    mainText: '#FFFFFF',
 
-    mainbackground: '#C9C9C9',
-
-    mainText: '#FBFEFD',
-    secondarybackground: '#FFF'
-
+    
+    susseIntl: 'SuisseIntl-SemiBold',
+    uniformbold:'Uniform-Bold',
+    uniforCondensedBold: 'Uniform-Condensed-Bold',
+    UniformCondensedMedium: 'Uniform-Condensed-Medium',
+    UniformCondensed: 'Uniform-Condensed',
+    UniformUltra: 'Uniform-Ultra',
+    Uniform: 'Uniform',
 }
+
+
+

@@ -1,16 +1,22 @@
 import { Container, HeaderVariant } from "./styles";
 
-import imgLogo1 from '../../assets/CuidadosComPeca.svg'
+
 import { useNavigate } from "react-router-dom";
 
 interface HeaderProps {
     onClick?: () => void;
-    variant: HeaderVariant
-    to: string
-    
+    variant: HeaderVariant;
+    icon?: string;
+    to: string;
+
 }
 
-export function Header({variant, to, onClick }: HeaderProps) {
+export function Header({
+    variant, 
+    to, 
+    onClick,  
+    icon 
+}: HeaderProps) {
     const navigate = useNavigate()
     return(
         <Container
@@ -21,7 +27,7 @@ export function Header({variant, to, onClick }: HeaderProps) {
                 navigate(to)
             }}  
         >
-           <img src={imgLogo1} alt="Home" />
+        {icon && <img src={icon} alt="" />}  
         </Container>
         
     )

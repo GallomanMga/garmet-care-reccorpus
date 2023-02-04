@@ -1,18 +1,20 @@
 import { motion } from 'framer-motion'
 import styled, {css} from 'styled-components'
+import { defaultTheme } from '../../styles/themes/default'
+
 
 export type ButtonVariant = 'primary' | 'secondary' | 'tertiary'
 
+
 interface ButtonContainerProps {
     variant: ButtonVariant
+    textcolor: ButtonVariant
 }
 
-
 const buttonVariants = {
-    primary: '#FF5935',
-    secondary: '#00D6B0',
-    tertiary: '#534EE1',
-    
+    primary: defaultTheme.primary,
+    secondary: defaultTheme.secondary,   
+    tertiary: defaultTheme.tertiary
 }
 
 
@@ -29,19 +31,28 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
   width: 300px;
   height: 60px;
 
-  border-radius: 10px;
-  border: 0;
+
+  
+  border: 1px solid rgba(255,255,0,0.5);
+  border-color: ${props => props.theme.secondary};
+  
+ 
+
 
   ${props => {
     return css
-    `background-color: ${buttonVariants[props.variant]}
-    `
+    `background-color: ${buttonVariants[props.variant]};
+     color: ${buttonVariants[props.textcolor]}
+    ` 
   } };
 
-  font-size: 1.5rem;
-  font-weight: bold;
+  
 
-  color: ${props => props.theme.mainText};
+
+
+  font-size: 2.5rem;
+  font-family: ${props => props.theme.UniformUltra};
+
 
   display: flex;
   align-items: center;

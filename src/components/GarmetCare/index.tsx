@@ -1,23 +1,24 @@
 import { Container, Content, Icon } from "./style";
 
 interface GarmetCareProps {
-    icon?: string;
+    icon: string;
     title?: string;
+    color:string;
 }
 
 
-export function GarmetCare({ icon, title}: GarmetCareProps ){
-    return(
-      
-        <Container>
+export function GarmetCare({ icon, title, color}: GarmetCareProps ){
+return(
+    
+    <Container>
+        
+            <Icon color={color} src={icon} />
             
-             <Icon src={icon} alt="" />
-             
-         
-             <Content
-                initial={{opacity: 0}}
-                animate={{opacity: 1}}
-                transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
+        
+            <Content
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{ duration: 0.75, ease: 'easeOut', delay: 0.2 }}
              >
                 {title}
              </Content>

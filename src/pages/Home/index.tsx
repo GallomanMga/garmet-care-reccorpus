@@ -2,46 +2,41 @@ import { Header } from '../../components/Header'
 import { Button } from '../../components/Button'
 import { Footer } from '../../components/Footer'
 
-import { Container } from './styles'
-import { ClickAnimation } from '../../components/LottieAnimation/ClickAnimation'
+
+import { Container, Span, Subtitle, Title, TitleWrapper } from './styles'
+import imgLogo from '../../assets/LogoReccorpus.svg'
 
 
 export function Home(){
 
     return (
         <>
-            <Header variant="main" to="/"/>
+            <Header 
+                icon={imgLogo}
+                variant="primary" 
+                to="/"
+            />
+            <TitleWrapper>
+            <Title> Cuidados </Title> <Subtitle><Span>com a</Span> PEÇA</Subtitle>
+            </TitleWrapper>
             
             <Container>
                 <Button 
                     to="/Fitness"
-                    //icon={imgLogo2}
-                    title="FITNESS"
+                    title="Fitness"
                     variant="primary"
+                    textcolor='secondary'
                 />
                 <Button 
                     to="/Beach"
-                    //icon={imgLogo1}
-                    title="BEACH"
+                    title="Beach"
                     variant="secondary"
-                />
-                <Button 
-                    to="/Kids"
-                    //icon={imgLogo1}
-                    title="KIDS"
-                    variant="tertiary"
+                    textcolor='primary'
                 />
                
                 <Footer /> 
-            </Container>
-            
-            
-            
-            
 
-           
-            
-            
+            </Container>            
         </>
     )
 }

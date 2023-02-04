@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import styled, {css} from 'styled-components'
+import { defaultTheme } from '../../styles/themes/default'
 
 export type FooterPagesVariant = 'primary' | 'secondary' | 'tertiary'
 
@@ -8,9 +9,9 @@ interface FooterPagesContainerProps {
 }
 
 const footerPagesVariants = {
-    primary: '#FF5935',
-    secondary: '#00D6B0',
-    tertiary: '#534EE1'
+    primary: defaultTheme.primary,
+    secondary: defaultTheme.secondary,   
+    tertiary: defaultTheme.tertiary
 }
 
 export const Container = styled.div<FooterPagesContainerProps>`
@@ -18,7 +19,7 @@ export const Container = styled.div<FooterPagesContainerProps>`
     
     align-items: center;
     justify-content: center;    
-    padding: 5rem;
+ 
 
     ${props => {
     return css
@@ -28,6 +29,6 @@ export const Container = styled.div<FooterPagesContainerProps>`
 
     img {
         width: 300px;
-        height: 300px;
+        height: 200px;
     }
 `

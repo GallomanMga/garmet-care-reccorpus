@@ -6,6 +6,7 @@ interface ButtonProps {
     onClick?: () => void;
     title: string;
     variant?: ButtonVariant;
+    textcolor: ButtonVariant;
     icon?: string;
     to: string;
 }
@@ -14,6 +15,7 @@ export function Button({
     onClick,
     title,
     variant = 'primary',
+    textcolor,
     icon,
     to
 }: ButtonProps) {
@@ -27,6 +29,7 @@ export function Button({
         >
                 <ButtonContainer
                     variant={variant}
+                    textcolor={textcolor}
                     onClick={() => {
                         if (onClick)
                         onClick()
