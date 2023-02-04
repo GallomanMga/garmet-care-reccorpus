@@ -23,13 +23,13 @@ export const TitleWrapper = styled.div`
 export const Title = styled.h1`
   font-family: ${props => props.theme.Uniform};
   color: ${props => props.theme.secondary};
-  font-size: 3rem;
+  font-size: 2rem;
 `
 
 export const Subtitle = styled.h2`
   font-family: ${props => props.theme.UniformUltra};
   color: ${props => props.theme.secondary};
-  font-size: 3rem;
+  font-size: 2rem;
 `
 
 export const Span = styled.span`
