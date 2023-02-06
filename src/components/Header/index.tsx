@@ -21,11 +21,12 @@ export function Header({
     return(
         <Container
             variant={variant}
-            onClick={() => {
-                if (onClick)
-                onClick()
-                navigate(to)
-            }}  
+         //   onClick={() => {
+         //       if (onClick)
+         //    onClick()
+         //       navigate(to)
+         //   }}  
+            onClick={() => navigate(to)}
         >
         {icon && <img src={icon} alt="" />}  
         </Container>

@@ -7,14 +7,15 @@ interface GarmetCareProps {
 }
 
 
-export function GarmetCare({ icon, title, color}: GarmetCareProps ){
+
+export function GarmetCare({ icon, title, color }: GarmetCareProps ){
 return(
     
     <Container>
         
-            <Icon color={color} src={icon} />
-            
-        
+            <Icon color={color} src={icon}  />
+      
+
             <Content
             initial={{opacity: 0}}
             animate={{opacity: 1}}

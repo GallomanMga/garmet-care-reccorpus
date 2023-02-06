@@ -3,7 +3,7 @@ import { ButtonContainer, ButtonVariant, ButtonWrapper } from "./styles";
 
 
 interface ButtonProps {
-    onClick?: () => void;
+    //onClick?: () => void;
     title: string;
     variant?: ButtonVariant;
     textcolor: ButtonVariant;
@@ -12,9 +12,9 @@ interface ButtonProps {
 }
 
 export function Button({
-    onClick,
+   // onClick,
     title,
-    variant = 'primary',
+    variant='primary',
     textcolor,
     icon,
     to
@@ -30,11 +30,12 @@ export function Button({
                 <ButtonContainer
                     variant={variant}
                     textcolor={textcolor}
-                    onClick={() => {
-                        if (onClick)
-                        onClick()
-                        navigate(to)
-                    }}  
+               //     onClick={() => {
+               //         if (onClick)
+               //         onClick()
+               //         navigate(to)
+               //     }}  
+                    onClick={() => navigate(to)}
                 >
                     {icon && <img src={icon} alt="" />}
                     {title}    
